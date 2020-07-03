@@ -2,7 +2,7 @@
 
 A sexy wrapper around express for multitenant websites
 
-sexpress provides a series of modules that can be turned on or off depending on the configuration set. In addition to this simple architecture, content editing and configuring can be doen entirely via the codebase on GitHub. sexpress was built as an evolution of a modular webserver project that I had used on previous websites. I started the sexpress project after feeling like I had a solution that I could replace all previous solutions with for my websites. Enjoy!
+sexpress provides a series of modules that can be turned on or off depending on the configuration set. In addition to this simple architecture, content editing and configuring can be done entirely via the codebase on GitHub. sexpress was built as an evolution of a modular webserver project that I had used on previous websites. I started the sexpress project after feeling like I had a solution that I could replace all previous solutions with for my websites. Enjoy!
 
 ## What is s\*e\*x\*y software?
 

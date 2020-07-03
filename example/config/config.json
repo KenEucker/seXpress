@@ -1,0 +1,24 @@
+{
+	"defaults": {
+		"metaTitle": "Example Sexpress Website",
+		"metaDescription": "This is a site that was built using the sexpress server"
+	},
+
+	"subdomains": {
+		"default": {
+			"template": "home",
+			"aliases": [
+				"home"
+			]
+		},
+		"www": {
+			"template": "landing",
+			"aliases": [
+				"landing"
+			]
+		}
+	},
+
+	"port": 80,
+	"debug": false
+}
