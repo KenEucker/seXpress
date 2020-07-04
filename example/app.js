@@ -1,5 +1,5 @@
 const sexpress = require("..")
-const app = sexpress()
+const app = sexpress('')
 
 if (!module.parent) {
 	app.run(() => {
