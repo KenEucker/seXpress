@@ -11,7 +11,7 @@ sexpress provides a series of modules that can be turned on or off depending on 
 - X (Configurable)
 - YOURS
 
-It's easy to use, all inclusive, configurable by using JSON failes, and it's yours to use for whatever you want.
+It's easy to use, all inclusive, configurable by using JSON files, and it's yours to use for whatever you want.
 
 ## Getting started
 
