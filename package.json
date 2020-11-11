@@ -1,6 +1,6 @@
 {
 	"name": "sexpress",
-	"version": "0.0.29",
+	"version": "0.1.0",
 	"description": "A sexy wrapper around express for multitenant websites",
 	"main": "index.js",
 	"directories": {
@@ -9,7 +9,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "node example/app --debug=true",
-		"start": "node example/app"
+		"start": "node example/app",
+		"clean": "node prettier . --write"
 	},
 	"repository": {
 		"type": "git",
@@ -44,6 +45,7 @@
 		"passport-oauth2-refresh": "^2.0.0",
 		"passport-reddit": "^0.2.4",
 		"path": "^0.12.7",
+		"prettier": "^2.1.2",
 		"reload": "^2.4.0",
 		"safe-timers": "^1.1.0",
 		"serve-favicon": "^2.5.0",
