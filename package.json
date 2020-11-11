@@ -8,8 +8,8 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "node example/app --debug=true",
-        "start": "node example/app",
+        "dev": "node examples/basic/app --debug=true",
+        "start": "node examples/basic/app",
         "clean": "node_modules/.bin/prettier . --write"
     },
     "repository": {
