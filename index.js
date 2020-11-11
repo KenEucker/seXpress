@@ -1,9 +1,9 @@
-const Sexpress = require("./lib/sexpress")
+const Sexpress = require('./lib/sexpress')
 
 const sexPressFactory = (opts = {}) => {
-	const sexpress = new Sexpress(opts)
+    const sexpress = new Sexpress(opts)
 
-	return sexpress
+    return sexpress
 }
 
 module.exports = sexPressFactory

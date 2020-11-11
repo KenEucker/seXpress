@@ -1,29 +1,23 @@
 {
-	"defaults": {
-		"metaTitle": "Example Sexpress Website",
-		"metaDescription": "This is a site that was built using the sexpress server"
-	},
+    "defaults": {
+        "metaTitle": "Example Sexpress Website",
+        "metaDescription": "This is a site that was built using the sexpress server"
+    },
 
-	"subdomains": {
-		"default": {
-			"template": "home",
-			"aliases": [
-				"home"
-			]
-		},
-		"www": {
-			"template": "landing",
-			"aliases": [
-				"landing"
-			]
-		}
-	},
+    "subdomains": {
+        "default": {
+            "template": "home",
+            "aliases": ["home"]
+        },
+        "www": {
+            "template": "landing",
+            "aliases": ["landing"]
+        }
+    },
 
-	"publicConfigFields": [
-		"yo"
-	],
+    "publicConfigFields": ["yo"],
 
-	"appName": "example",
-	"port": 80,
-	"debug": false
+    "appName": "example",
+    "port": 80,
+    "debug": false
 }

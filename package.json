@@ -1,54 +1,54 @@
 {
-	"name": "sexpress",
-	"version": "0.1.1",
-	"description": "A sexy wrapper around express for multitenant websites",
-	"main": "index.js",
-	"directories": {
-		"lib": "lib"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "node example/app --debug=true",
-		"start": "node example/app",
-		"clean": "node prettier . --write"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/keneucker/sexpress.git"
-	},
-	"keywords": [
-		"express"
-	],
-	"author": "Ken Eucker <keneucker@gmail.com>",
-	"license": "UNLICENSED",
-	"bugs": {
-		"url": "https://github.com/keneucker/sexpress/issues"
-	},
-	"homepage": "https://github.com/keneucker/sexpress#readme",
-	"dependencies": {
-		"app-root-path": "^3.0.0",
-		"body-parser": "^1.19.0",
-		"chalk": "^4.1.0",
-		"cli-progress": "^3.8.2",
-		"clobfig": "^1.1.5",
-		"deepmerge": "^4.2.2",
-		"ejs": "^3.1.5",
-		"express": "^4.17.1",
-		"express-session": "^1.17.1",
-		"fs": "0.0.1-security",
-		"http": "0.0.1-security",
-		"morgan": "^1.10.0",
-		"nodemailer": "^6.4.15",
-		"ora": "^4.1.1",
-		"passport": "^0.4.1",
-		"passport-imgur": "0.0.3",
-		"passport-oauth2-refresh": "^2.0.0",
-		"passport-reddit": "^0.2.4",
-		"path": "^0.12.7",
-		"prettier": "^2.1.2",
-		"reload": "^2.4.0",
-		"safe-timers": "^1.1.0",
-		"serve-favicon": "^2.5.0",
-		"watch": "^1.0.2"
-	}
+    "name": "sexpress",
+    "version": "0.1.2",
+    "description": "A sexy wrapper around express for multitenant websites",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node example/app --debug=true",
+        "start": "node example/app",
+        "clean": "node_modules/.bin/prettier . --write"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/keneucker/sexpress.git"
+    },
+    "keywords": [
+        "express"
+    ],
+    "author": "Ken Eucker <keneucker@gmail.com>",
+    "license": "UNLICENSED",
+    "bugs": {
+        "url": "https://github.com/keneucker/sexpress/issues"
+    },
+    "homepage": "https://github.com/keneucker/sexpress#readme",
+    "dependencies": {
+        "app-root-path": "^3.0.0",
+        "body-parser": "^1.19.0",
+        "chalk": "^4.1.0",
+        "cli-progress": "^3.8.2",
+        "clobfig": "^1.1.5",
+        "deepmerge": "^4.2.2",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "fs": "0.0.1-security",
+        "http": "0.0.1-security",
+        "morgan": "^1.10.0",
+        "nodemailer": "^6.4.15",
+        "ora": "^4.1.1",
+        "passport": "^0.4.1",
+        "passport-imgur": "0.0.3",
+        "passport-oauth2-refresh": "^2.0.0",
+        "passport-reddit": "^0.2.4",
+        "path": "^0.12.7",
+        "prettier": "^2.1.2",
+        "reload": "^2.4.0",
+        "safe-timers": "^1.1.0",
+        "serve-favicon": "^2.5.0",
+        "watch": "^1.0.2"
+    }
 }

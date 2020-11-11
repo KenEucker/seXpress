@@ -6,10 +6,10 @@ sexpress provides a series of modules that can be turned on or off depending on 
 
 ## What is s\*e\*x\*y software?
 
-- Simple
-- Elegant
-- X (Configurable)
-- YOURS
+-   Simple
+-   Elegant
+-   X (Configurable)
+-   YOURS
 
 It's easy to use, all inclusive, configurable by using JSON files, and it's yours to use for whatever you want.
 
