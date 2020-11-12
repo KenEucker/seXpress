@@ -4,7 +4,7 @@ const routes = (app) => {
             const hostSubdomainEnd = host.indexOf('.') + 1
             const redirectToHost = `${req.protocol}://${host.substring(hostSubdomainEnd)}`
 
-            console.log({
+            app.log.error({
                 subdomain,
                 hostNotFound: host,
                 redirectToHost,
@@ -13,7 +13,6 @@ const routes = (app) => {
             return res.redirect(redirectToHost)
         }
 
-		console.log({subdomain})
         const template = 'landing'
         const params = typeof req.params === 'object' ? req.params : {}
         const data = app.getPublicConfigurationValues(subdomain, host, params)

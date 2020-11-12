@@ -4,7 +4,7 @@ const routes = (app) => {
             const hostSubdomainEnd = host.indexOf('.') + 1
             const redirectToHost = `${req.protocol}://${host.substring(hostSubdomainEnd)}`
 
-            console.log({
+            app.log.error({
                 subdomain,
                 hostNotFound: host,
                 redirectToHost,
