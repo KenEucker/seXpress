@@ -1,0 +1,19 @@
+{
+    "subdomains": {
+        "default": {
+            "template": "home",
+            "aliases": ["home"]
+        },
+        "www": {
+            "template": "landing",
+            "aliases": ["landing"]
+        }
+    },
+
+    "publicConfigFields": ["yo"],
+
+    "appName": "example",
+    "port": 80,
+    "debug": false,
+    "headless": true
+}

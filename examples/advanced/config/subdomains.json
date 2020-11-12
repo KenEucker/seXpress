@@ -1,0 +1,21 @@
+{
+    "default": {
+        "yo": "duh",
+        "imgur": {
+            "imgurAlbumHash": ""
+        },
+        "reddit": {
+            "redditSubreddit": ""
+        },
+        "images": {
+            "header": "",
+            "logo": ""
+        }
+    },
+    "www": {
+        "yo": "word",
+        "meta": {
+            "metaTitle": "Landing Page"
+        }
+    }
+}
