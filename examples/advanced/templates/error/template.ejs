@@ -109,7 +109,9 @@
 			</div>
 			<p><%= title %> <small>Error <%= code %></small></p>
 			<p class="lead"><%= message %></p>
-			<a href="#">home page</a>
+			<% if (locals.redirectTo) { %>
+				<a href="<%= redirectTo %>">Go Home</a>
+		  <% } %>
 		</div>
 	</div>
 
