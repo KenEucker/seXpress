@@ -1,10 +1,15 @@
-const routes = (app) => {
-    app.routeSubdomainRequest('/hello', (subdomain, req, res, host) => {
+class SiteController {
+    init(app) {
+        this.app = app
+        this.engine = 'ejs'
+    }
+
+    hello(subdomain, req, res, host) {
         if (!subdomain) {
             const hostSubdomainEnd = host.indexOf('.') + 1
             const redirectToHost = `${req.protocol}://${host.substring(hostSubdomainEnd)}`
 
-            app.log.error({
+            this.app.log.error({
                 subdomain,
                 hostNotFound: host,
                 redirectToHost,
@@ -15,13 +20,14 @@ const routes = (app) => {
 
         const template = 'landing'
         const params = typeof req.params === 'object' ? req.params : {}
-        const data = app.getPublicConfigurationValues(subdomain, host, params)
+        const data = this.app.getPublicConfigurationValues(subdomain, host, params)
 
-        return app.renderTemplate(template, data, res)
-    })
+        return this.app.renderTemplate(template, data, res)
+    }
+
+    routes(app) {
+        app.routeSubdomainRequest('/hello', this.hello)
+    }
 }
 
-module.exports = {
-    engine: 'ejs',
-    routes,
-}
+module.exports = new SiteController()
