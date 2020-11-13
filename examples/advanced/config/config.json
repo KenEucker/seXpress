@@ -15,5 +15,6 @@
     "appName": "example",
     "port": 80,
     "debug": false,
-    "headless": true
+    "headless": true,
+    "documentAPI": true
 }
