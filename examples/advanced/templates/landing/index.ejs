@@ -10,7 +10,7 @@
 		<script src='public/js/example-api.js' type='text/javascript'></script>
 		<script>
 			(function(SwaggerClient) {
-				var specUrl = '/api/docs/swagger.json' // data urls are OK too 'data:application/json;base64,abc...'
+				var specUrl = '/api/swagger.json' // data urls are OK too 'data:application/json;base64,abc...'
 				SwaggerClient.http.withCredentials = true // this activates CORS, if necessary
 
 				new SwaggerClient(specUrl)
@@ -23,7 +23,7 @@
 				})
 				.then(function(yoResult) {
 					console.log(yoResult.obj)
-					
+
 					document.getElementsByTagName('p').item(0).innerText = yoResult.obj.yo
 					// you may return more promises, if necessary
 				}, function (reason) {

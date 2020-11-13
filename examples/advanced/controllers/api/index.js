@@ -22,28 +22,26 @@ class ApiController {
      *         description: reddit post text
      */
     yo(subdomain, req, res, host, next) {
-		return res.json({
-			yo: req.params.yo,
-			subdomain,
-			host,
-		})
-	}
+        return res.json({
+            yo: req.params.yo,
+            subdomain,
+            host,
+        })
+    }
 
     routes(app) {
         app.routeSubdomainRequest('/v1/yo/:yo?', this.yo, 'post')
-        app.routeSubdomainRequest('/v3/:endpoint?', function NotImplemented(
-            subdomain,
-            req,
-            res,
-            host,
-            next,
-        ) {
-            const myError = new Error()
-            myError.status = 501
-            myError.message = 'Version 3 not yet implemented'
+        app.routeSubdomainRequest(
+            '/v3/:endpoint?',
+            function NotImplemented(subdomain, req, res, host, next) {
+                const myError = new Error()
+                myError.status = 501
+                myError.message = 'Version 3 not yet implemented'
 
-            next(myError)
-        }, 'post')
+                next(myError)
+            },
+            'post',
+        )
     }
 }
 

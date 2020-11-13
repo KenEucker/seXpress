@@ -1,6 +1,6 @@
 {
     "name": "sexpress",
-    "version": "0.1.13",
+    "version": "0.1.14",
     "description": "A sexy wrapper around express for multitenant websites",
     "main": "index.js",
     "directories": {
@@ -47,6 +47,7 @@
         "ora": "^4.1.1",
         "passport": "^0.4.1",
         "passport-imgur": "0.0.3",
+        "passport-jwt": "^4.0.0",
         "passport-oauth2-refresh": "^2.0.0",
         "passport-reddit": "^0.2.4",
         "path": "^0.12.7",
