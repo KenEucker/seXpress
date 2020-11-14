@@ -35,7 +35,7 @@ const routes = (app) => {
         }
 
         const params = typeof req.params === 'object' ? req.params : {}
-        return res.render('yo.ejs', params)
+        return res.render('yo', params)
     })
 }
 
