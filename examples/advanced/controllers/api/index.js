@@ -30,8 +30,8 @@ class ApiController {
     }
 
     routes(app) {
-        app.routeSubdomainRequest('/v1/yo/:yo?', this.yo, 'post')
-        app.routeSubdomainRequest(
+        app.route('/v1/yo/:yo?', this.yo, 'post')
+        app.route(
             '/v3/:endpoint?',
             function NotImplemented(subdomain, req, res, host, next) {
                 const myError = new Error()

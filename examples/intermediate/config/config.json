@@ -1,12 +1,12 @@
 {
     "subdomains": {
-        "default": {
+        "index": {
             "template": "home",
             "aliases": ["home"]
         },
         "www": {
             "template": "landing",
-            "aliases": ["landing"]
+            "aliases": ["www"]
         }
     },
 
