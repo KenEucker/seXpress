@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Woops! <%= code %> - <%= title %></title>
+	<title>Woops! <%= vars.code %> - <%= vars.title %></title>
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
 	<style>
 		* {
@@ -104,18 +104,18 @@
 <body>
 	<div id="error">
 		<div class="error cover">
-			<div class="error-<%= code %>">
-				<h1><%= code %></h1>
+			<div class="error-<%= vars.code %>">
+				<h1><%= vars.code %></h1>
 			</div>
-			<p><%= title %> <small>Error <%= code %></small></p>
-			<p class="lead"><%= message %></p>
-			<% if (locals.redirectTo) { %>
-				<a href="<%= redirectTo %>">Go Home</a>
+			<p><%= vars.title %> <small>Error <%= vars.code %></small></p>
+			<p class="lead"><%= vars.message %></p>
+			<% if (vars.redirectTo) { %>
+				<a href="<%= vars.redirectTo %>">Go Home</a>
 		  <% } %>
 		</div>
 	</div>
 
-	<% if (footer){ %><footer><p><%- footer %></p></footer><% } %>
+	<% if (vars.footer){ %><footer><p><%- vars.footer %></p></footer><% } %>
 	<script>
 		(function() {
 			window.setTimeout(() => {
