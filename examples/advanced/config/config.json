@@ -5,5 +5,5 @@
     "documentAPI": true,
     "onlyLogErrors": false,
     "privateApis": ["admin"],
-	"apiSecurity": true
+    "apiSecurity": true
 }
