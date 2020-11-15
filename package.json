@@ -10,9 +10,9 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "node examples/basic/app --debug=true",
         "start": "node examples/basic/app",
-        "start-minimal": "node examples/minimal/app",
-        "start-intermediate": "node examples/intermediate/app",
-        "start-advanced": "node examples/advanced/app",
+        "minimal": "node examples/minimal/app",
+        "intermediate": "node examples/intermediate/app",
+        "advanced": "node examples/advanced/app",
         "clean": "node_modules/.bin/prettier . --write"
     },
     "repository": {
@@ -48,6 +48,7 @@
         "passport": "^0.4.1",
         "passport-imgur": "0.0.3",
         "passport-jwt": "^4.0.0",
+        "passport-local": "^1.0.0",
         "passport-oauth2-refresh": "^2.0.0",
         "passport-reddit": "^0.2.4",
         "path": "^0.12.7",

@@ -1,20 +1,9 @@
 {
-    "subdomains": {
-        "index": {
-            "template": "home",
-            "aliases": ["home"]
-        },
-        "www": {
-            "template": "landing",
-            "aliases": ["landing"]
-        }
-    },
-
-    "publicConfigFields": ["yo"],
-
-    "appName": "example",
+    "appName": "Advanced Application",
     "port": 80,
-    "debug": false,
     "headless": true,
-    "documentAPI": true
+    "documentAPI": true,
+    "onlyLogErrors": false,
+    "privateApis": ["admin"],
+    "apiSecurity": true
 }

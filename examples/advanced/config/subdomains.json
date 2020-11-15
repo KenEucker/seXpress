@@ -1,5 +1,7 @@
 {
     "index": {
+        "template": "home",
+        "aliases": ["home"],
         "yo": "duh",
         "imgur": {
             "imgurAlbumHash": ""
@@ -13,6 +15,8 @@
         }
     },
     "www": {
+        "template": "landing",
+        "aliases": ["landing"],
         "yo": "word",
         "meta": {
             "metaTitle": "Landing Page"

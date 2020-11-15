@@ -1,7 +1,6 @@
 class SiteController {
     init(app) {
         this.app = app
-        this.engine = 'ejs'
     }
 
     hello(subdomain, req, res, host) {

@@ -1,7 +1,23 @@
 class ApiController {
     init(app) {
         this.app = app
-        this.engine = 'ejs'
+    }
+
+    /**
+     * @swagger
+     * /v1/wassup:
+     *   get:
+     *     produces:
+     *       - application/json
+     *     description: Can you dig?
+     *     security:
+     *       - basic: []
+     *     responses:
+     *       200:
+     *         description: we can dig it
+     */
+    wassup(subdomain, req, res, host, next) {
+        return res.send('Yo!')
     }
 
     /**
@@ -13,13 +29,13 @@ class ApiController {
      *     parameters:
      *       - in: path
      *         name: yo
-     *         description: the tag nunber to retrieve
+     *         description: yo dawg
      *         schema:
-     *           type: integer
-     *     description: Retrieves the reddit post template for the given tag number, or latest
+     *           type: string
+     *     description: Yo Yo
      *     responses:
      *       200:
-     *         description: reddit post text
+     *         description: yo dawg, I heard you like text
      */
     yo(subdomain, req, res, host, next) {
         return res.json({
@@ -31,6 +47,7 @@ class ApiController {
 
     routes(app) {
         app.route('/v1/yo/:yo?', this.yo, 'post')
+        app.route('/v1/wassup', this.wassup, ['get', 'post'], true)
         app.route(
             '/v3/:endpoint?',
             function NotImplemented(subdomain, req, res, host, next) {

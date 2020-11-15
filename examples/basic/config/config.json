@@ -10,7 +10,7 @@
         }
     },
 
-    "publicConfigFields": ["yo"],
+    "publicFields": ["yo"],
 
     "appName": "example",
     "port": 80,
