@@ -1,23 +1,8 @@
 {
     "index": {
-        "template": "home",
-        "aliases": ["home"],
-        "yo": "duh",
-        "imgur": {
-            "imgurAlbumHash": ""
-        },
-        "reddit": {
-            "redditSubreddit": ""
-        },
-        "images": {
-            "header": "",
-            "logo": ""
-        }
-    },
-    "www": {
         "template": "landing",
-        "aliases": ["landing"],
-        "yo": "word",
+        "aliases": ["www"],
+        "yo": "yo",
         "meta": {
             "metaTitle": "Landing Page"
         }

@@ -17,7 +17,7 @@ class ApiController {
      *         description: we can dig it
      */
     wassup(subdomain, req, res, host, next) {
-		console.log("hHERHER")
+        console.log('hHERHER')
         return res.send('Yo!')
     }
 

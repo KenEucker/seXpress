@@ -1,11 +1,11 @@
 module.exports = {
-    appName: "Advanced Application",
+    appName: 'Advanced Application',
     port: 80,
     headless: true,
     documentAPI: true,
     onlyLogErrors: false,
-    privateApis: ["admin"],
+    privateApis: ['admin'],
     security: {
-		enabled: true
-	}
+        enabled: true,
+    },
 }
