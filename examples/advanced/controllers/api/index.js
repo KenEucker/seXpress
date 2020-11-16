@@ -6,7 +6,7 @@ class ApiController {
     /**
      * @swagger
      * /v1/wassup:
-     *   get:
+     *   post:
      *     produces:
      *       - application/json
      *     description: Can you dig?
@@ -17,6 +17,7 @@ class ApiController {
      *         description: we can dig it
      */
     wassup(subdomain, req, res, host, next) {
+		console.log("hHERHER")
         return res.send('Yo!')
     }
 
