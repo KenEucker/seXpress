@@ -5,6 +5,23 @@ class ApiController {
 
     /**
      * @swagger
+     * /v1/duh:
+     *   post:
+     *     produces:
+     *       - application/json
+     *     description: Can you dig?
+     *     security:
+     *       - jwt: []
+     *     responses:
+     *       200:
+     *         description: we can dig it
+     */
+    duh(subdomain, req, res, host, next) {
+        return res.send('YoYo')
+    }
+
+    /**
+     * @swagger
      * /v1/wassup:
      *   post:
      *     produces:
@@ -48,6 +65,7 @@ class ApiController {
     routes(app) {
         app.route('/v1/yo/:yo?', this.yo, 'post')
         app.route('/v1/wassup', this.wassup, ['get', 'post'], true)
+        app.route('/v1/duh', this.duh, 'post', true)
         app.route(
             '/v3/:endpoint?',
             function NotImplemented(subdomain, req, res, host, next) {

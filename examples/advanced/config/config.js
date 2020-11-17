@@ -8,15 +8,20 @@ module.exports = {
     security: {
         enabled: true,
         schemes: [
-        	{
-        		name: 'local',
-        		credentials: {
-        			username: 'test',
-        			password: 'test',
-        		}
+        	// {
+        	// 	name: 'local',
+        	// 	credentials: {
+        	// 		username: 'test',
+        	// 		password: 'test',
+        	// 	}
+			// },
+			{
+				name: 'jwt',
+				credentials: {
+					secret: 'dawg',
+				}
 			},
-			'bearer',
-			'basic'
+			// 'basic'
         ],
     },
 }
