@@ -7,5 +7,16 @@ module.exports = {
     privateApis: ['admin'],
     security: {
         enabled: true,
+        schemes: [
+        	{
+        		name: 'local',
+        		credentials: {
+        			username: 'test',
+        			password: 'test',
+        		}
+			},
+			'bearer',
+			'basic'
+        ],
     },
 }

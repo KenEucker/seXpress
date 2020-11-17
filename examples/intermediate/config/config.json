@@ -13,6 +13,11 @@
     "publicFields": ["yo"],
 
     "appName": "example",
-    "port": 80,
-    "debug": false
+	"security": {
+		"enabled": true,
+		"credentials": {
+			"username": "test"
+		},
+		"schemes": ["local"]
+	}
 }
