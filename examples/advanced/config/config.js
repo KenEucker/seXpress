@@ -24,4 +24,9 @@ module.exports = {
 			// 'basic'
         ],
     },
+	
+	// ssl: {
+	// 	"strategy": "letsencrypt",
+	// 	"passphrase": "myapppasphrase"
+	// }
 }
