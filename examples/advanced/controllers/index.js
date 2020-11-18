@@ -4,7 +4,7 @@ class SiteController {
             const hostSubdomainEnd = host.indexOf('.') + 1
             const redirectToHost = `${req.protocol}://${host.substring(hostSubdomainEnd)}`
 
-            this.app.log.error({
+            this.app.log.error('Subdomain not set, redirecting to host', {
                 subdomain,
                 hostNotFound: host,
                 redirectToHost,
