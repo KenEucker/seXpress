@@ -11,7 +11,7 @@
     },
 
     "publicFields": {
-		"meta": true,
+        "meta": true,
         "yo": true
     },
 

@@ -3,8 +3,8 @@ module.exports = {
     port: 80,
     headless: true,
     secureApiDocs: true,
-	onlyLogErrors: false,
-	renderer: 'liquid',
+    onlyLogErrors: false,
+    renderer: 'liquid',
     privateApis: ['admin'],
     security: {
         enabled: true,
