@@ -1,8 +1,4 @@
 class SiteController {
-    init(app) {
-        this.app = app
-    }
-
     hello(subdomain, req, res, host) {
         if (!subdomain) {
             const hostSubdomainEnd = host.indexOf('.') + 1

@@ -1,8 +1,4 @@
 class AdminController {
-    init(app) {
-        this.app = app
-    }
-
     /**
      * @swagger
      * /get/{setting}:
@@ -15,7 +11,7 @@ class AdminController {
      *         description: The setting
      *         schema:
      *           type: integer
-     *     description: Retrieves the reddit post template for the given tag number, or latest
+     *     description: Retrieves the admin configuration setting
      *     responses:
      *       200:
      *         description: reddit post text
@@ -28,6 +24,37 @@ class AdminController {
         })
     }
 
+    /**
+     * @swagger
+     * /flush/{setting}:
+     *   post:
+     *     produces:
+     *       - application/json
+     *     parameters:
+     *       - in: path
+     *         name: setting
+     *         description: The setting
+     *         schema:
+     *           type: integer
+     *     description: flushes the cache of the given setting or ALL
+     *     responses:
+     *       200:
+     *         description: reddit post text
+     */
+    flushCache(subdomain, req, res, host, next) {
+        return res.json({
+            setting: req.params.setting,
+            subdomain,
+            host,
+        })
+    }
+
+    getHooks() {
+        return {
+            '/flush/:setting?': this.flushCache,
+        }
+    }
+
     servePrivateDocumentation() {}
 
     routes(app) {
@@ -36,3 +63,4 @@ class AdminController {
 }
 
 module.exports = new AdminController()
+module.exports.hooks = module.exports.getHooks()

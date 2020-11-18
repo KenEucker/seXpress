@@ -13,11 +13,11 @@
     "publicFields": ["yo"],
 
     "appName": "example",
-	"security": {
-		"enabled": true,
-		"credentials": {
-			"username": "test"
-		},
-		"schemes": ["local"]
-	}
+    "security": {
+        "enabled": true,
+        "credentials": {
+            "username": "test"
+        },
+        "schemes": ["local"]
+    }
 }

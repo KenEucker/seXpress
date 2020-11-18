@@ -1,8 +1,4 @@
 class ApiController {
-    init(app) {
-        this.app = app
-    }
-
     /**
      * @swagger
      * /v1/duh:
