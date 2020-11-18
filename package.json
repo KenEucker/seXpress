@@ -1,6 +1,6 @@
 {
     "name": "sexpress",
-    "version": "0.3.7",
+    "version": "0.4.0",
     "description": "A sexy wrapper around express for multitenant websites",
     "main": "index.js",
     "directories": {
@@ -43,6 +43,7 @@
         "helmet": "^4.2.0",
         "http": "0.0.1-security",
         "http-error-pages": "^3.0.0",
+        "liquidjs": "^9.16.1",
         "mkdirp": "^1.0.4",
         "morgan": "^1.10.0",
         "node-cache": "^5.1.2",

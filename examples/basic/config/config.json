@@ -10,7 +10,10 @@
         }
     },
 
-    "publicFields": ["yo"],
+    "publicFields": {
+		"meta": true,
+        "yo": true
+    },
 
     "appName": "example",
     "port": 80,

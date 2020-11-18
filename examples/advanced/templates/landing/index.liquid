@@ -1,13 +1,13 @@
 <html>
 	<head>
-		<title><%- page.meta.metaTitle %></title>
+		<title>{{ page.meta.metaTitle }}</title>
 	</head>
 	<body>
 
 		<h1>Yo</h1>
-		<p><%- page.yo %></p>
+		<p>{{ page.yo }}</p>
 
-		<%- include(locals.partials + 'hi') %>
+		{% layout 'hi.liquid' %}
 		
 		<script src='public/js/example-api.js' type='text/javascript'></script>
 		<script>

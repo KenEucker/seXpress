@@ -1,0 +1,7 @@
+{% assign credentials = credentials | { username: 'Not Logged In' } %}
+
+<span>WHOAMI: <strong>{{ credentials.username }}</strong></span>
+
+<script>
+	console.log('You Are', JSON.parse(`{{ credentials | json }}`))
+</script>
