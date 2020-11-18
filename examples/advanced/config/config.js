@@ -4,7 +4,7 @@ module.exports = {
     headless: true,
     secureApiDocs: true,
     onlyLogErrors: false,
-    renderer: 'liquid',
+    overrideViewEngine: 'liquid',
     privateApis: ['admin'],
     security: {
         enabled: true,
