@@ -19,7 +19,7 @@ class ApiController {
      *         description: we can dig it
      */
     duh(subdomain, req, res, host, next) {
-        return res.send(JSON.stringify({params: req.params, body: req.body}))
+        return res.send(JSON.stringify({ params: req.params, body: req.body }))
     }
 
     /**
