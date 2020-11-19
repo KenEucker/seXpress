@@ -16,6 +16,5 @@
     },
 
     "appName": "example",
-    "port": 80,
-    "debug": false
+    "overrideViewEngine": "liquid"
 }

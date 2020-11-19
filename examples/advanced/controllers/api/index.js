@@ -6,6 +6,12 @@ class ApiController {
      *     produces:
      *       - application/json
      *     description: Can you dig?
+     *     parameters:
+     *       - in: formData
+     *         name: yo
+     *         description: yo dawg
+     *         schema:
+     *           type: string
      *     security:
      *       - jwt: []
      *     responses:
@@ -13,7 +19,7 @@ class ApiController {
      *         description: we can dig it
      */
     duh(subdomain, req, res, host, next) {
-        return res.send('YoYo')
+        return res.send(JSON.stringify({params: req.params, body: req.body}))
     }
 
     /**

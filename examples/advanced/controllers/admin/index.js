@@ -1,12 +1,12 @@
 class AdminController {
     /**
      * @swagger
-     * /get/{setting}:
+     * /get/:
      *   post:
      *     produces:
      *       - application/json
      *     parameters:
-     *       - in: path
+     *       - in: formData
      *         name: setting
      *         description: The setting
      *         schema:
@@ -26,12 +26,12 @@ class AdminController {
 
     /**
      * @swagger
-     * /flush/{setting}:
+     * /flush/:
      *   post:
      *     produces:
      *       - application/json
      *     parameters:
-     *       - in: path
+     *       - in: formData
      *         name: setting
      *         description: The setting
      *         schema:
