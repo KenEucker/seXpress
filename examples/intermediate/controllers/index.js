@@ -4,6 +4,7 @@ const routes = (app) => {
         const params = typeof req.params === 'object' ? req.params : {}
         const data = app.getPublicConfig(subdomain, host, params)
 
+		console.log({template, subdomain})
         return app.renderTemplate(template, data, res)
     })
 
