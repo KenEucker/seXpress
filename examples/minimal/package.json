@@ -9,6 +9,8 @@
         }
     },
     "defaults": {
-        "metaTitle": "Minimal"
+        "meta": {
+            "metaTitle": "Minimal"
+        }
     }
 }

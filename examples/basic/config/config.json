@@ -10,11 +10,14 @@
         }
     },
 
-    "publicFields": {
+    "public": {
         "meta": true,
         "yo": true
     },
 
     "appName": "example",
-    "overrideViewEngine": "liquid"
+
+    "rendering": {
+        "overrideViewEngine": ["liquid", "ejs"]
+    }
 }

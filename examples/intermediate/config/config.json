@@ -1,4 +1,6 @@
 {
+	"appName": "example",
+	
     "subdomains": {
         "index": {
             "template": "home"
@@ -8,12 +10,15 @@
         }
     },
 
-    "publicFields": {
+    "public": {
         "meta": true,
         "yo": true
-    },
+	},
+	
+	"rendering": {
+		"overrideViewEngine": [ "liquid", "ejs" ]
+	},
 
-    "appName": "example",
     "security": {
         "enabled": true,
         "credentials": {

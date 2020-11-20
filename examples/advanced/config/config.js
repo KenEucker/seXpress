@@ -1,9 +1,18 @@
 module.exports = {
     appName: 'Advanced Application',
     port: 80,
-    headless: true,
-    overrideViewEngine: 'liquid',
-    onlyLogErrors: false,
+
+    rendering: {
+        overrideViewEngine: 'liquid',
+    },
+
+    logging: {
+        onlyLogErrors: false,
+    },
+
+    templating: {
+        headless: true,
+    },
 
     api: {
         secureApiDocs: true,
@@ -28,6 +37,9 @@ module.exports = {
             },
             // 'basic'
         ],
+        // google: {
+
+        // }
     },
 
     // ssl: {
