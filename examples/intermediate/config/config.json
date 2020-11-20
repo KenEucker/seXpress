@@ -1,6 +1,6 @@
 {
-	"appName": "example",
-	
+    "appName": "example",
+
     "subdomains": {
         "index": {
             "template": "home"
@@ -13,11 +13,11 @@
     "public": {
         "meta": true,
         "yo": true
-	},
-	
-	"rendering": {
-		"overrideViewEngine": [ "liquid", "ejs" ]
-	},
+    },
+
+    "rendering": {
+        "overrideViewEngine": ["liquid", "ejs"]
+    },
 
     "security": {
         "enabled": true,

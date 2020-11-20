@@ -8,8 +8,8 @@ const routes = (app) => {
     })
 
     app.route('/yo/:yo?', function getYoYo(subdomain, req, res, host) {
-		const params = typeof req.params === 'object' ? req.params : {}
-		
+        const params = typeof req.params === 'object' ? req.params : {}
+
         return res.render('yo', params)
     })
 }
