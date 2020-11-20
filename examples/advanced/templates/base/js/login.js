@@ -1,5 +1,5 @@
-(function () {
-	console.log('You can now log in')
+;(function () {
+    console.log('You can now log in')
 
-	// const 
+    // const
 })()
