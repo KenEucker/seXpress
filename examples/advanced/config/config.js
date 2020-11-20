@@ -1,12 +1,16 @@
 module.exports = {
     appName: 'Advanced Application',
     port: 80,
-    headless: true,
-    // secureApiDocs: true,
-    onlyLogErrors: false,
+	headless: true,
     overrideViewEngine: 'liquid',
-    privateApis: ['admin'],
-    security: {
+    onlyLogErrors: false,
+
+	api: {
+    	secureApiDocs: true,
+		privateApis: ['admin'],
+	},
+
+	security: {
         enabled: true,
         schemes: [
             {

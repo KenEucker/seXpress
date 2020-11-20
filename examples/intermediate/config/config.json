@@ -19,6 +19,6 @@
         "credentials": {
             "username": "test"
         },
-        "schemes": ["local"]
+        "schemes": ["local", "basic"]
     }
 }
