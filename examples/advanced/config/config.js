@@ -12,7 +12,7 @@ module.exports = {
 
     templating: {
         headless: true,
-	},
+    },
 
     api: {
         secureApiDocs: true,
