@@ -30,6 +30,7 @@
     "homepage": "https://github.com/keneucker/sexpress#readme",
     "dependencies": {
         "app-root-path": "^3.0.0",
+        "ascii-art": "^2.5.0",
         "body-parser": "^1.19.0",
         "chalk": "^4.1.0",
         "cli-progress": "^3.8.2",
