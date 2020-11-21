@@ -12,14 +12,14 @@ module.exports = {
 
     templating: {
         headless: true,
-    },
+	},
 
     api: {
         secureApiDocs: true,
         privateApis: ['admin'],
     },
 
-    security: {
+    authentication: {
         enabled: true,
         schemes: [
             {

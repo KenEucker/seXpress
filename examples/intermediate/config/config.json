@@ -15,11 +15,7 @@
         "yo": true
     },
 
-    "rendering": {
-        "overrideViewEngine": ["liquid", "ejs"]
-    },
-
-    "security": {
+    "authentication": {
         "enabled": true,
         "credentials": {
             "username": "test"
