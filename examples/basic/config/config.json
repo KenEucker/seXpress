@@ -5,8 +5,7 @@
             "aliases": ["home"]
         },
         "www": {
-            "template": "landing",
-            "aliases": ["landing"]
+            "template": "landing"
         }
     },
 

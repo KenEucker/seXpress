@@ -2,7 +2,7 @@ const routes = (app) => {
     app.route('/:yo?', (subdomain, req, res, host) => {
         const template = app.getTemplateNameFromSubdomain(subdomain)
         const params = typeof req.params === 'object' ? req.params : {}
-        const data = app.getPublicConfig(subdomain, host, params)
+        const data = app.getPublicData(subdomain, host, params)
 
         return app.renderTemplate(template, data, res)
     })

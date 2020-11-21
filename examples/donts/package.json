@@ -1,0 +1,17 @@
+{
+    "title": "minimal",
+    "description": "things to refrain from doing",
+    "subdomains": {
+        "index": {
+            "template": "index",
+            "aliases": [
+                "www"
+            ]
+        }
+    },
+    "defaults": {
+        "meta": {
+            "metaTitle": "Minimal"
+        }
+    }
+}

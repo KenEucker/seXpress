@@ -1,3 +1,5 @@
 const sexpress = require('../..')
 
-const app = sexpress({ run: true })
+const app = sexpress()
+
+app.run()

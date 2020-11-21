@@ -1,6 +1,6 @@
 {
     "name": "sexpress",
-    "version": "0.5.2",
+    "version": "0.5.3",
     "description": "A sexy wrapper around express for multitenant websites",
     "main": "index.js",
     "directories": {
@@ -13,6 +13,7 @@
         "minimal": "node examples/minimal/app",
         "intermediate": "node examples/intermediate/app",
         "advanced": "node examples/advanced/app",
+        "donts": "node examples/donts/app",
         "clean": "node_modules/.bin/prettier . --write"
     },
     "repository": {
@@ -64,6 +65,7 @@
         "passport-reddit": "^0.2.4",
         "path": "^0.12.7",
         "prettier": "^2.2.0",
+        "random-questions": "^1.0.1",
         "reload": "^2.4.0",
         "safe-timers": "^1.1.0",
         "sass": "^1.29.0",
