@@ -11,6 +11,7 @@ module.exports = {
     },
 
     templating: {
+		home: "hello",
         headless: true,
     },
 
