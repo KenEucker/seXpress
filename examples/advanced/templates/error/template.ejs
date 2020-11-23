@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Woops! <%= vars.code %> - <%= vars.title %></title>
+	<title>Error! <%= vars.code %> - <%= vars.title %></title>
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
 	<style>
 		* {
@@ -83,9 +83,24 @@
 			transition: 0.2s all;
 		}
 
+		.error .tail {
+			margin-top: 10vh;
+		}
+
 		.error a:hover {
 			color: #ffab00;
 			border-color: #ffab00;
+		}
+
+		.error .debug {
+			-webkit-transition: 0.2s all;
+			transition: 0.8s all ease-in-out;
+			margin: 1em 1em;
+			color: #222;
+			font-size: 28px;
+			text-shadow: 2px 1px 3px #ffab00, -1px -1px 0px #c9c9c9;
+			letter-spacing: 0.1em;
+			font-weight: 700;
 		}
 
 		@media only screen and (max-width: 480px) {
@@ -111,17 +126,24 @@
 			<p class="lead"><%= vars.message %></p>
 			<% if (vars.redirectTo) { %>
 				<a href="<%= vars.redirectTo %>">Go Home</a>
-		  <% } %>
+		  	<% } %>
+			<p class="tail"><%- vars.footer %></p>
 		</div>
 	</div>
-
-	<% if (vars.footer){ %><footer><p><%- vars.footer %></p></footer><% } %>
 	<script>
 		(function() {
 			window.setTimeout(() => {
+				const error = <%- JSON.stringify(vars) %>
+				if (!!error.debug) {
+					const errorMessageHeaderElement = document.querySelector('.error .lead')
+					errorMessageHeaderElement.classList.add('debug')
+					errorMessageHeaderElement.innerText = error.debug
+				}
+				console.log('sexpress error', error)
+
 				const errorCodeHeaderElement = document.querySelector('.error h1')
 				if (errorCodeHeaderElement) {
-					const code = errorCodeHeaderElement.innerText
+					const code = error.code.toString()
 					const codeHtml = code[1] === '0' ? `${code[0]}<span>${code[1]}</span>${code[2]}` : `<span>${code}</span>`
 					errorCodeHeaderElement.innerHTML = codeHtml
 				}

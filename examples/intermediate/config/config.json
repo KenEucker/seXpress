@@ -8,14 +8,14 @@
         "www": {
             "template": "landing"
         }
-	},
+    },
 
     "public": {
         "meta": true,
         "yo": true
-	},
-	
-	"login": true,
+    },
+
+    "login": true,
 
     "authentication": {
         "enabled": true,

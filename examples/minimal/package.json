@@ -1,9 +1,9 @@
 {
     "subdomains": {
         "index": {
-			"meta": {
-				"metaTitle": "Minimal"
-			}
+            "meta": {
+                "metaTitle": "Minimal"
+            }
         }
     }
 }

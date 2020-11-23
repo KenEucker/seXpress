@@ -4,10 +4,10 @@ module.exports = {
 
     rendering: {
         overrideViewEngine: 'liquid',
-	},
-	
-	login: true,
-	authentication: true,
+    },
+
+    login: true,
+    authentication: true,
 
     logging: {
         onlyLogErrors: false,
