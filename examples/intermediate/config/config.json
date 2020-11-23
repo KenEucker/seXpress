@@ -1,5 +1,5 @@
 {
-    "appName": "example",
+    "name": "example",
 
     "subdomains": {
         "index": {
@@ -8,12 +8,14 @@
         "www": {
             "template": "landing"
         }
-    },
+	},
 
     "public": {
         "meta": true,
         "yo": true
-    },
+	},
+	
+	"login": true,
 
     "authentication": {
         "enabled": true,

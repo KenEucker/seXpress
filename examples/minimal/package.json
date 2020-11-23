@@ -1,16 +1,9 @@
 {
-    "title": "minimal",
     "subdomains": {
         "index": {
-            "template": "index",
-            "aliases": [
-                "www"
-            ]
-        }
-    },
-    "defaults": {
-        "meta": {
-            "metaTitle": "Minimal"
+			"meta": {
+				"metaTitle": "Minimal"
+			}
         }
     }
 }

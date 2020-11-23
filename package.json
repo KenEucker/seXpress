@@ -1,6 +1,6 @@
 {
     "name": "sexpress",
-    "version": "0.5.3",
+    "version": "0.5.4",
     "description": "A sexy wrapper around express for multitenant websites",
     "main": "index.js",
     "directories": {
@@ -35,7 +35,7 @@
         "body-parser": "^1.19.0",
         "chalk": "^4.1.0",
         "cli-progress": "^3.8.2",
-        "clobfig": "^1.2.2",
+        "clobfig": "^1.2.3",
         "cookie-parser": "^1.4.5",
         "cookie-session": "^1.4.0",
         "cors": "^2.8.5",

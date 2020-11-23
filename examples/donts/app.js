@@ -1,9 +1,9 @@
 const sexpress = require('../..')
 
-const app = sexpress({ appName: 'old' })
-const app2 = sexpress({ appName: 'new', run: true })
+const app = sexpress({ name: 'old' })
+const app2 = sexpress({ name: 'new', run: true })
 const app3 = sexpress()
-const app4 = sexpress({ appName: 'never' })
+const app4 = sexpress({ name: 'never' })
 
 console.log('NONE:', {
     app1: app.isRunning(),

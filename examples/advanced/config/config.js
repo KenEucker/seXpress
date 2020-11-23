@@ -1,10 +1,13 @@
 module.exports = {
-    appName: 'Advanced Application',
+    name: 'Advanced Application',
     port: 80,
 
     rendering: {
         overrideViewEngine: 'liquid',
-    },
+	},
+	
+	login: true,
+	authentication: true,
 
     logging: {
         onlyLogErrors: false,

@@ -14,7 +14,7 @@
         "yo": true
     },
 
-    "appName": "example",
+    "name": "basic example",
 
     "rendering": {
         "overrideViewEngine": ["liquid", "ejs"]
