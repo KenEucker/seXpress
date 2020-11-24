@@ -15,7 +15,7 @@
     "www": {
         "yo": "word",
         "meta": {
-            "metaTitle": "Landing Page"
+            "title": "Landing Page"
         }
     }
 }

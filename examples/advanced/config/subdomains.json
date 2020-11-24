@@ -4,7 +4,7 @@
         "aliases": ["www"],
         "yo": "yo",
         "meta": {
-            "metaTitle": "Landing Page"
+            "title": "Landing Page"
         }
     }
 }

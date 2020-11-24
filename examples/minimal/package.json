@@ -2,7 +2,7 @@
     "subdomains": {
         "index": {
             "meta": {
-                "metaTitle": "Minimal"
+                "title": "Minimal"
             }
         }
     }

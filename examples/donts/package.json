@@ -8,10 +8,5 @@
                 "www"
             ]
         }
-    },
-    "defaults": {
-        "meta": {
-            "metaTitle": "Minimal"
-        }
     }
 }
