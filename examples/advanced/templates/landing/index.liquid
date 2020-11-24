@@ -5,12 +5,12 @@
 	<body>
 		{% include 'login' %}
 
-		<h1>Yo</h1>
+		<h1>{{ name }}</h1>
 		<p>{{ page.yo }}</p>
 
 		{% include 'hi' %}
 		
-		<script src='public/js/example-api.js' type='text/javascript'></script>
+		{{ '' | sexy_api_script}}
 		<script>
 			(function(SwaggerClient) {
 				var specUrl = '/api/swagger.json' // data urls are OK too 'data:application/json;base64,abc...'
