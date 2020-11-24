@@ -3,7 +3,7 @@ module.exports = {
     port: 80,
 
     rendering: {
-        overrideViewEngine: 'liquid',
+        overrideViewEngine: ['liquid', 'ejs'],
     },
 
     login: true,
