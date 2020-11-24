@@ -8,5 +8,8 @@
 		<h1>Yo</h1>
 		<p>{{ page.yo }}</p>
 		
+		{% if debug { %}
+		{{ content.localdev }}
+		{% endif %}
 	</body>
 </html>

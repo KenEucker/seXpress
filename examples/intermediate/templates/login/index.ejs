@@ -24,6 +24,9 @@
                 <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">Login</button>
             </form>
         </div>
-    </div>
+	</div>
+	<% if (debug) { %>
+	<%- content.localdev %>
+	<% } %>
 </body>
 </html>

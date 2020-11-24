@@ -35,4 +35,7 @@
 			})(SwaggerClient)
 		</script>
 	</body>
+	{% if debug { %}
+	{{ content.localdev }}
+	{% endif %}
 </html>
