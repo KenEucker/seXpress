@@ -1,6 +1,6 @@
 {
-	"scripts": {
-		"post-install": "docker build -t biketag-website .",
-		"start": "docker run -p 8080:80 -d biketag-website"
-	}
+    "scripts": {
+        "post-install": "docker build -t biketag-website .",
+        "start": "docker run -p 8080:80 -d biketag-website"
+    }
 }
