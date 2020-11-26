@@ -37,6 +37,7 @@
         "cli": ">=1.0.0",
         "cli-progress": "^3.8.2",
         "clobfig": "^1.2.3",
+        "connect-redis": "^5.0.0",
         "cookie-parser": "^1.4.5",
         "cookie-session": "^1.4.0",
         "cors": "^2.8.5",
@@ -69,6 +70,8 @@
         "path": "^0.12.7",
         "prettier": "^2.2.0",
         "random-questions": "^1.0.1",
+        "redis": "^3.0.2",
+        "redis-server": "^1.2.2",
         "reload": "^2.4.0",
         "safe-timers": "^1.1.0",
         "sass": "^1.29.0",
@@ -76,6 +79,7 @@
         "swagger-client": "^3.12.0",
         "swagger-jsdoc": "^5.0.1",
         "swagger-ui-express": "^4.1.4",
+        "uuidv4": "^6.2.5",
         "watch": "^1.0.2"
     }
 }

@@ -7,7 +7,13 @@ module.exports = {
     },
 
     login: true,
-    authentication: true,
+	authentication: true,
+	
+	session: {
+		redis: {
+			// enabled: true,
+		},
+	},
 
     logging: {
         onlyLogErrors: false,
