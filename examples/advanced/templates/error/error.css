@@ -30,12 +30,12 @@ body {
     line-height: 1.4;
 }
 
-.error .error-404 {
+.error > div, .error .error-404 {
     height: 158px;
     line-height: 153px;
 }
 
-.error .error-404 h1 {
+.error > div h1, .error .error-404 h1 {
     font-family: 'Josefin Sans', sans-serif;
     color: #222;
     font-size: 220px;
@@ -45,7 +45,7 @@ body {
     text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9;
 }
 
-.error .error-404 h1 > span {
+.error > div h1 > span, .error .error-404 h1 > span {
     text-shadow: 2px 2px 0px #ffab00, -2px -2px 0px #ffab00, 0px 0px 8px #ff8700;
 }
 
@@ -73,22 +73,33 @@ body {
     transition: 0.2s all;
 }
 
+.error .tail {
+    margin-top: 10vh;
+}
+
 .error a:hover {
     color: #ffab00;
     border-color: #ffab00;
 }
 
-.error .tail {
-    margin-top: 10vh;
+.error .debug, .error .tail {
+    -webkit-transition: 0.2s all;
+    transition: 0.8s all ease-in-out;
+    margin: 1em 1em;
+    color: #222;
+    font-size: 28px;
+    text-shadow: 2px 1px 3px #ffab00, -1px -1px 0px #c9c9c9;
+    letter-spacing: 0.1em;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 480px) {
-    .error .error-404 {
+    .error > div, .error .error-404 {
         height: 122px;
         line-height: 122px;
     }
 
-    .error .error-404 h1 {
+    .error > div h1, .error .error-404 h1 {
         font-size: 122px;
     }
 }
