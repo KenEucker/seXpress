@@ -49,7 +49,7 @@
         "express-session": "^1.17.1",
         "helmet": "^4.2.0",
         "http": "0.0.1-security",
-        "http-error-pages": "KenEucker/HttpErrorPages.git#master",
+        "http-error-pages": "HttpErrorPages/HttpErrorPages.git#master",
         "https-localhost": "^4.6.3",
         "liquidjs": "^9.16.1",
         "mkdirp": "^1.0.4",
