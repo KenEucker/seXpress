@@ -53,8 +53,8 @@ module.exports = {
     },
 
     ssl: {
-		enabled: true,
-    	"strategy": "letsencrypt",
-    	"passphrase": "myapppasphrase"
-    }
+        enabled: true,
+        strategy: 'letsencrypt',
+        passphrase: 'myapppasphrase',
+    },
 }

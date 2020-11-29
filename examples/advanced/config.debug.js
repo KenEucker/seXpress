@@ -1,7 +1,7 @@
 module.exports = {
     debug: true,
     ssl: {
-		enabled: true,
-		port: 8443,
-	},
+        enabled: true,
+        port: 8443,
+    },
 }
