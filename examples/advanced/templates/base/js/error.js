@@ -1,4 +1,4 @@
-(function () {
+;(function () {
     window.setTimeout(() => {
         const error = window.error
         if (!!error.debug) {

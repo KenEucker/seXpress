@@ -56,5 +56,11 @@ module.exports = {
         enabled: true,
         strategy: 'letsencrypt',
         passphrase: 'myapppasphrase',
+        contentSecurityPolicy: {
+            directives: {
+                styleSrc: [`https://code.jquery.com/`, `https://cdn.jsdelivr.net/`],
+                scriptSrc: [`https://code.jquery.com/`, `https://cdn.jsdelivr.net/`],
+            },
+        },
     },
 }
