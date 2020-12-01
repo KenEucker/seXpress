@@ -17,12 +17,13 @@
 
 	"login": true,
 	
-	"sites": {
+	"sites": [{
 		"subject": "keneucker.com",
 		"altnames": [
-			"keneucker.com"
+			"keneucker.com",
+			"www.keneucker.com"
 		]
-	},
+	}],
 
     "authentication": {
         "enabled": true,
