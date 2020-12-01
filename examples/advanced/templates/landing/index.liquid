@@ -11,7 +11,7 @@
 		{% include 'hi' %}
 		
 		{{ '' | sexy_api_script}}
-		<script>
+		<script nonce="{{ nonce }}">
 			(function(SwaggerClient) {
 				var specUrl = '/api/swagger.json' // data urls are OK too 'data:application/json;base64,abc...'
 				SwaggerClient.http.withCredentials = true // this activates CORS, if necessary
