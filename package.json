@@ -48,6 +48,7 @@
         "express-redirect": "^1.2.2",
         "express-robots-txt": "^0.5.0",
         "express-session": "^1.17.1",
+        "greenlock-express": "^4.0.3",
         "helmet": "^4.2.0",
         "http": "0.0.1-security",
         "http-error-pages": "github:HttpErrorPages/HttpErrorPages#master",

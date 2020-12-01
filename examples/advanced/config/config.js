@@ -54,8 +54,7 @@ module.exports = {
 
     ssl: {
         enabled: true,
-        strategy: 'letsencrypt',
-        passphrase: 'myapppasphrase',
+        strategy: 'greenlock',
         contentSecurityPolicy: {
             directives: {
                 styleSrc: [`https://code.jquery.com/`, `https://cdn.jsdelivr.net/`],
