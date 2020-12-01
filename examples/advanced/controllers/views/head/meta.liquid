@@ -1,5 +1,5 @@
 {% assign pageMeta = page.meta || undefined %}
-{{ pageMeta | json | console_log }}
+{{ pageMeta | json | console_log: nonce }}
 
 <title>{{ pageMeta.title }}</title>
 <meta charset="{{ pageMeta.charset || "utf-8" }}" />
