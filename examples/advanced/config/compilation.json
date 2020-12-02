@@ -1,0 +1,14 @@
+{
+	"enabled": true,
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+		"rootDir": "src",
+        "outDir": "public",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+		"sourceMap": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
+    }
+}
