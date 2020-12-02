@@ -1,3 +1,14 @@
 {{ 'img/developers.jpeg' | asset_url | img_tag }}
-{{ 'js/api.js' | asset_url | javascript_tag: nonce }}
-<a href="/api/docs">Go to docs</a>
+{{ 'js/advanced_application-api.js' | asset_url | javascript_tag: nonce }}
+{{ 'js/api.js' | asset_url | module_script: nonce }}
+
+<br>
+<style type="text/css" nonce="{{nonce}}">
+	* {
+		text-align: center;
+	}
+</style>
+<a href="/api/docs" nonce="{{nonce}}">Go to docs</a>
+<p>
+	Loading Api ...
+</p>

@@ -1,9 +1,10 @@
 {
 	"enabled": true,
     "compilerOptions": {
-        "module": "es6"
+		"target": "es5",
+		"allowJs": true
 	},
 	"files": [
-		"index.ts"
+		"src/index.ts"
 	]
 }
