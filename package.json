@@ -53,6 +53,7 @@
         "http": "0.0.1-security",
         "http-error-pages": "github:HttpErrorPages/HttpErrorPages#master",
         "https-localhost": "^4.6.3",
+        "jsoneditor": "^9.1.4",
         "liquidjs": "^9.16.1",
         "mkdirp": "^1.0.4",
         "morgan": "^1.10.0",
