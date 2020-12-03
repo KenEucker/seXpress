@@ -1,6 +1,6 @@
 {
     "name": "sexpress",
-    "version": "0.6.44",
+    "version": "0.6.45",
     "description": "A sexy wrapper around express for multitenant websites",
     "main": "index.js",
     "directories": {
@@ -58,7 +58,6 @@
         "mkdirp": "^1.0.4",
         "morgan": "^1.10.0",
         "node-cache": "^5.1.2",
-        "node-typescript-compiler": "^2.1.2",
         "nodemailer": "^6.4.15",
         "openapi-types": "^7.0.1",
         "ora": "^4.1.1",
@@ -83,7 +82,6 @@
         "swagger-client": "^3.12.0",
         "swagger-jsdoc": "^5.0.1",
         "swagger-ui-express": "^4.1.4",
-        "typescript": "^4.1.2",
         "unzipper": "^0.10.11",
         "uuid": "^8.3.1",
         "watch": "^1.0.2"
