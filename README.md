@@ -18,10 +18,8 @@ It's easy to use, all inclusive, configurable by using JSON files, and it's your
 Using Sexpress is even more simple than running express, as is the point.
 
 ```
-const Sexpress = require("sexpress")
-const sexpress = new Sexpress()
+const sexpress = require("sexpress")()
 sexpress.run()
-
 ```
 
 The above code will use all configuration set in the config/ folder. More on the configuration later.
