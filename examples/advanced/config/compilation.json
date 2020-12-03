@@ -1,10 +1,6 @@
 {
 	"enabled": true,
-    "compilerOptions": {
-		"target": "es5",
-		"allowJs": true
-	},
 	"files": [
-		"src/index.ts"
+		"src/index.coffee"
 	]
 }
