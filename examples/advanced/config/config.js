@@ -1,6 +1,8 @@
 module.exports = {
     name: 'Advanced Application',
-    port: 80,
+	port: 80,
+	
+	ui: true,
 
     rendering: {
         overrideViewEngine: ['liquid', 'ejs'],
