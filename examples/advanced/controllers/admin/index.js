@@ -16,11 +16,11 @@ class AdminController {
      *       200:
      *         description: reddit post text
      */
-    getSetting(subdomain, req, res, host, next) {
+    getSetting(req, res) {
         return res.json({
             setting: req.params.setting,
-            subdomain,
-            host,
+            subdomain: res.locals.subdomain,
+            host: res.locals.host,
         })
     }
 
@@ -41,11 +41,11 @@ class AdminController {
      *       200:
      *         description: reddit post text
      */
-    flushCache(subdomain, req, res, host, next) {
+    flushCache(req, res) {
         return res.json({
             setting: req.params.setting,
-            subdomain,
-            host,
+            subdomain: res.locals.subdomain,
+            host: res.locals.host,
         })
     }
 

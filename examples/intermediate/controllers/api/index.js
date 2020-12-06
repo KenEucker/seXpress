@@ -1,9 +1,9 @@
 const routes = (app) => {
-    app.route('/yo/:yo?', (subdomain, req, res, host, next) => {
+    app.route('/yo/:yo?', (req, res) => {
         res.json({
             params: req.params,
-            subdomain,
-            host,
+            subdomain: res.locals.subdomain,
+            host: res.locals.host,
         })
     })
 
@@ -28,11 +28,11 @@ const routes = (app) => {
      */
     app.apiRoute(
         '/yo',
-        (subdomain, req, res, host, next) => {
+        (req, res) => {
             res.json({
                 params: req.params,
-                subdomain,
-                host,
+                subdomain: res.locals.subdomain,
+                host: res.locals.host,
             })
         },
         'post',

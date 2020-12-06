@@ -1,6 +1,7 @@
 module.exports = {
     name: 'Advanced Application',
 	port: 80,
+	silent: true,
 	
 	ui: true,
 

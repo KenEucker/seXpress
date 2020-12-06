@@ -18,7 +18,7 @@ class ApiController {
      *       200:
      *         description: we can dig it
      */
-    duh(subdomain, req, res, host, next) {
+    duh(req, res) {
         return res.send(JSON.stringify({ params: req.params, body: req.body }))
     }
 
@@ -35,7 +35,7 @@ class ApiController {
      *       200:
      *         description: we can dig it
      */
-    wassup(subdomain, req, res, host, next) {
+    wassup(req, res) {
         return res.send('Yo!')
     }
 
@@ -56,11 +56,11 @@ class ApiController {
      *       200:
      *         description: yo dawg, I heard you like text
      */
-    yo(subdomain, req, res, host, next) {
+    yo(req, res) {
         return res.json({
             yo: req.params.yo,
-            subdomain,
-            host,
+            subdomain: res.locals.subdomain,
+            host: res.locals.host,
         })
     }
 
@@ -70,7 +70,7 @@ class ApiController {
         app.route('/v1/duh', this.duh, 'post', true)
         app.route(
             '/v3/:endpoint?',
-            function NotImplemented(subdomain, req, res, host, next) {
+            function NotImplemented(req, res, next) {
                 const myError = new Error()
                 myError.status = 501
                 myError.message = 'Version 3 not yet implemented'

@@ -1,5 +1,6 @@
 class SiteController {
-    hello(subdomain, req, res, host) {
+    hello(req, res) {
+		const { host, subdomain } = res.locals
         const template = 'landing'
         const params = typeof req.params === 'object' ? req.params : {}
         const data = this.app.getPublicData(subdomain, host, params, res)
