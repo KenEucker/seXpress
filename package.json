@@ -8,7 +8,7 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "node examples/basic/app --debug=true",
+        "dev": "node examples/basic/app debug=true",
         "start": "node examples/basic/app",
         "minimal": "node examples/minimal/app",
         "intermediate": "node examples/intermediate/app",
