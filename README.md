@@ -27,6 +27,7 @@ sexpress.run()
 Sexpress can be configured by values in the package.json, a single config.json file in the config/ folder, or a set of files matching [*config.js, *.json] contained within the config/ folder. This is accomplished by using the package [clobfig](https://www.npmjs.com/package/clobfig).
 
 A simple example configuration is below. With this configuration, sexpress will serve the index file located in templates/index/ folder and provide the data `{ meta: { title: "minimal" } }` upon render. (index.html or index.ejs by default)
+
 ```
 {
     "subdomains": {
@@ -40,6 +41,7 @@ A simple example configuration is below. With this configuration, sexpress will 
 ```
 
 In the tempalates/index folder, using the example config above, you might have the following index.ejs file:
+
 ```
 <html>
 	<head>
@@ -52,6 +54,7 @@ In the tempalates/index folder, using the example config above, you might have t
 ```
 
 Also, in the same folder, you may have an index.scss file:
+
 ```
 body {
 	margin: auto;
@@ -63,6 +66,7 @@ body {
 ```
 
 Finally, when running sexpress, if you open up your browser to http://localhost, you should get the following response:
+
 ```
 <html>
 	<head>
