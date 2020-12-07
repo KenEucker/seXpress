@@ -17,13 +17,6 @@
 
     "login": true,
 
-    "sites": [
-        {
-            "subject": "keneucker.com",
-            "altnames": ["keneucker.com", "www.keneucker.com"]
-        }
-    ],
-
     "authentication": {
         "enabled": true,
         "credentials": {
