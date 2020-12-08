@@ -1,6 +1,6 @@
 {
     "name": "sexpress",
-    "version": "0.7.7",
+    "version": "0.7.8",
     "description": "A sexy wrapper around express for multitenant websites",
     "main": "index.js",
     "directories": {
@@ -81,6 +81,7 @@
         "redis": "^3.0.2",
         "redis-server": "^1.2.2",
         "reload": "^2.4.0",
+        "rword": "^3.2.0",
         "safe-timers": "^1.1.0",
         "sass": "^1.30.0",
         "serve-favicon": "^2.5.0",
