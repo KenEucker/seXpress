@@ -59,7 +59,7 @@
         "http-error-pages": "^3.1.0",
         "https-localhost": "^4.6.4",
         "jsoneditor": "^9.1.4",
-        "liquidjs": "^9.16.1",
+        "liquidjs": "^9.17.0",
         "mkdirp": "^1.0.4",
         "morgan": "^1.10.0",
         "node-cache": "^5.1.2",
