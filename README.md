@@ -18,7 +18,7 @@ It's easy to use, all inclusive, configurable by using JSON files, and it's your
 Using seXpress is even more simple than running express, as is the point.
 
 ```
-const seXpress = require("seXpress")()
+const seXpress = require("sexpress")()
 seXpress.run()
 ```
 
