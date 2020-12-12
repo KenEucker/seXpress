@@ -53,6 +53,13 @@ module.exports = {
         // google: {
 
         // }
+
+		"imgur": {
+			"imgurClientID": "a404f3d0c94ee79",
+			"imgurAuthorization": "Client-ID a404f3d0c94ee79",
+			"imgurClientSecret": "310744f351ff8d9f11d2d84726497908823c5013",
+			"imgurEmailAddress": "pdxbiketag@gmail.com"
+		}
     },
 
     ssl: {
