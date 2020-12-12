@@ -87,7 +87,7 @@ Finally, when running seXpress, if you open up your browser to http://localhost,
 </html>
 ```
 
-### For more examples on how to configure and run seXpress applications, see the starter project [seXpress-starter](https://www.npmjs.com/package/seXpress-starter)
+### For more examples on how to configure and run seXpress applications, see the starter project [seXpress-starter](https://www.npmjs.com/package/sexpress-starter)
 
 ## Notes
 
