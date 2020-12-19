@@ -31,13 +31,13 @@
     "homepage": "https://github.com/keneucker/sexpress#readme",
     "dependencies": {
         "@babel/core": "^7.12.9",
-        "@babel/preset-env": "^7.12.7",
+        "@babel/preset-env": "^7.12.11",
         "app-root-path": "^3.0.0",
         "body-parser": "^1.19.0",
         "chalk": "^4.1.0",
         "cli": ">=1.0.0",
         "cli-progress": "^3.8.2",
-        "clobfig": "^1.2.6",
+        "clobfig": "^1.2.7",
         "coffee-loader": "^1.0.1",
         "coffeescript": "^2.5.1",
         "connect-redis": "^5.0.0",
@@ -59,8 +59,8 @@
         "http": "0.0.1-security",
         "http-error-pages": "^3.1.0",
         "https-localhost": "^4.6.4",
-        "jsoneditor": "^9.1.4",
-        "liquidjs": "^9.17.0",
+        "jsoneditor": "^9.1.5",
+        "liquidjs": "^9.19.0",
         "mkdirp": "^1.0.4",
         "morgan": "^1.10.0",
         "node-cache": "^5.1.2",
@@ -93,6 +93,6 @@
         "unzipper": "^0.10.11",
         "uuid": "^8.3.1",
         "watch": "^1.0.2",
-        "webpack": "^5.10.0"
+        "webpack": "^5.11.0"
     }
 }
