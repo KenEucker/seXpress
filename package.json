@@ -37,7 +37,7 @@
         "chalk": "^4.1.0",
         "cli": ">=1.0.0",
         "cli-progress": "^3.8.2",
-        "clobfig": "^1.2.7",
+        "clobfig": "^1.2.8",
         "coffee-loader": "^1.0.1",
         "coffeescript": "^2.5.1",
         "connect-redis": "^5.0.0",
