@@ -2,6 +2,7 @@ module.exports = {
     name: 'Advanced Application',
 	port: 80,
 	silent: true,
+	host: 'advanced.local',
 	
 	ui: true,
 
@@ -13,8 +14,9 @@ module.exports = {
     authentication: true,
 
     session: {
+		// disableCookies: true,
         redis: {
-            // enabled: true,
+            enabled: true,
         },
     },
 
@@ -60,7 +62,7 @@ module.exports = {
 
     ssl: {
         enabled: true,
-        strategy: 'greenlock',
+        // strategy: 'greenlock',
         contentSecurityPolicy: {
             directives: {
                 styleSrc: [`https://code.jquery.com/`, `https://cdn.jsdelivr.net/`],
