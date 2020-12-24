@@ -4,6 +4,11 @@ module.exports = {
 	silent: true,
 	host: 'advanced.local',
 	
+	middlewares: {
+		redis: {
+			enabled:true,
+		},
+	},
 	ui: true,
 
     rendering: {
@@ -14,7 +19,7 @@ module.exports = {
     authentication: true,
 
     session: {
-		// disableCookies: true,
+		disableCookies: true,
         redis: {
             enabled: true,
         },
@@ -32,7 +37,7 @@ module.exports = {
     api: {
         secureApiDocs: true,
         privateApis: ['admin'],
-    },
+	},
 
     authentication: {
         enabled: true,
