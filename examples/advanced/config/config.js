@@ -19,7 +19,7 @@ module.exports = {
     authentication: true,
 
     session: {
-		disableCookies: true,
+		// disableCookies: true,
         redis: {
             enabled: true,
         },
