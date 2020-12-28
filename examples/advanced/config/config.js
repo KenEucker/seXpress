@@ -16,7 +16,6 @@ module.exports = {
     },
 
     login: true,
-    authentication: true,
 
     session: {
 		// disableCookies: true,
@@ -57,9 +56,11 @@ module.exports = {
             },
             // 'basic'
         ],
-        // google: {
-
-        // }
+        auth0: {
+			auth0ClientID: 'dzhU3eF3t534okbV4oy10tvcTab6LVo0',
+			auth0ClientSecret: 'ae-_ibEfTPb5gRhHXWZFxug3MkwG96zYmVULpzWmwt8imCokpylKDuoSzAbuKNKE',
+			auth0ClientDomain: 'biketag.us.auth0.com',
+        }
 
 		// "imgur": {
 		// }
