@@ -18,7 +18,7 @@ module.exports = {
     login: true,
 
     session: {
-		// disableCookies: true,
+		disableCookies: true,
         redis: {
             enabled: true,
         },
@@ -56,11 +56,6 @@ module.exports = {
             },
             // 'basic'
         ],
-        auth0: {
-			auth0ClientID: 'dzhU3eF3t534okbV4oy10tvcTab6LVo0',
-			auth0ClientSecret: 'ae-_ibEfTPb5gRhHXWZFxug3MkwG96zYmVULpzWmwt8imCokpylKDuoSzAbuKNKE',
-			auth0ClientDomain: 'biketag.us.auth0.com',
-        }
 
 		// "imgur": {
 		// }
