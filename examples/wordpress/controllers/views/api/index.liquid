@@ -1,0 +1,28 @@
+{{ 'img/developers.jpeg' | asset_url | img_tag }}
+
+{{ api | sexy_api_script: nonce }}
+
+<br>
+<style type="text/css" nonce="{{nonce}}">
+	* {
+		text-align: center;
+	}
+</style>
+<a href="/api/docs" nonce="{{nonce}}">Go to docs</a>
+<p>
+	Loading Api ...
+</p>
+
+{{ "const api = new AdvancedApplication() ; api.init()" | safe_script: nonce }}
+<script nonce="{{nonce}}" type="text/javascript">
+	((loaderIsSet) => {
+		if (!loaderIsSet) window.sexy = { load: [] }
+		else window.sexy.load = window.sexy.load || []
+		document.addEventListener("DOMContentLoaded", async () => {
+			const loadersLength = window.sexy.load.length
+			for (let i = 0; i < loadersLength; ++i) {
+				await window.sexy.load[i]()
+			}
+		})
+	})(window.sexy)
+</script>

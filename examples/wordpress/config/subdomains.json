@@ -1,0 +1,10 @@
+{
+    "index": {
+        "template": "landing",
+        "aliases": ["www"],
+        "yo": "yo",
+        "meta": {
+            "title": "Landing Page"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+<html>
+	<head>
+		{% include "head/meta" %}
+	</head>
+	<body>
+		<header>
+			<h1>{{ page.meta.title }}</h1>
+			<h5>{{ page.meta.description }}</h5>
+		</header>
+		<section>
+			<h3>Included controller view</h3>
+			{% include 'login' %}
+
+			<h3>Page vars</h3>
+			<h1>{{ name }}</h1>
+			<p>{{ page.yo }}</p>
+
+			<h3>Included template view</h3>
+			<div>
+				{% include 'hi' %}
+			</div>
+		</section>
+		{{ page | json | console_log: nonce }}
+		{{ '' | sexy_api_script: nonce }}
+		<script type="text/javascript" nonce="{{ nonce }}">
+			(function(SwaggerClient) {
+				var specUrl = '/api/swagger.json' // data urls are OK too 'data:application/json;base64,abc...'
+				SwaggerClient.http.withCredentials = true // this activates CORS, if necessary
+
+				new SwaggerClient(specUrl)
+				.then(function (swaggerClient) {
+					window.apiClient = swaggerClient
+
+					return window.apiClient.apis.default.post_v1_yo__yo_({yo: "Yo!"})
+				}, function (reason) {
+					console.error("failed to load the spec" + reason)
+				})
+				.then(function(yoResult) {
+					console.log(yoResult.obj)
+
+					document.getElementsByTagName('p').item(0).innerText = yoResult.obj.yo
+					// you may return more promises, if necessary
+				}, function (reason) {
+					console.error("failed on API call " + reason);
+				})
+			})(SwaggerClient)
+		</script>
+	</body>
+</html>

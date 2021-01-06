@@ -1,0 +1,6 @@
+{
+	"enabled": true,
+	"files": [
+		"src/index.coffee"
+	]
+}

@@ -1,0 +1,111 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#error {
+    position: relative;
+    height: 100vh;
+    background-color: #222;
+}
+
+#error .error {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.error {
+    max-width: 460px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.error > div,
+.error .error-404 {
+    height: 158px;
+    line-height: 153px;
+}
+
+.error > div h1,
+.error .error-404 h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #222;
+    font-size: 220px;
+    letter-spacing: 10px;
+    margin: 0px;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9;
+}
+
+.error > div h1 > span,
+.error .error-404 h1 > span {
+    text-shadow: 2px 2px 0px #ffab00, -2px -2px 0px #ffab00, 0px 0px 8px #ff8700;
+}
+
+.error p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #c9c9c9;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.error a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    color: #c9c9c9;
+    border: 2px solid #c9c9c9;
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: 700;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.error .tail {
+    margin-top: 10vh;
+}
+
+.error a:hover {
+    color: #ffab00;
+    border-color: #ffab00;
+}
+
+.error .debug,
+.error .tail {
+    -webkit-transition: 0.2s all;
+    transition: 0.8s all ease-in-out;
+    margin: 1em 1em;
+    color: #222;
+    font-size: 28px;
+    text-shadow: 2px 1px 3px #ffab00, -1px -1px 0px #c9c9c9;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+    .error > div,
+    .error .error-404 {
+        height: 122px;
+        line-height: 122px;
+    }
+
+    .error > div h1,
+    .error .error-404 h1 {
+        font-size: 122px;
+    }
+}
