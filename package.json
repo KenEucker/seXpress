@@ -55,6 +55,7 @@
         "ejs": "^3.1.5",
         "express": "^4.17.1",
         "express-enforces-ssl-update": "github:KenEucker/express-enforces-ssl#master",
+        "express-http-proxy": "^1.6.2",
         "express-redirect": "^1.2.2",
         "express-robots-txt": "^0.5.0",
         "express-session": "^1.17.1",
