@@ -54,11 +54,7 @@ module.exports = {
                     secret: 'dawg',
                 },
             },
-            // 'basic'
         ],
-
-		// "imgur": {
-		// }
     },
 
     ssl: {
