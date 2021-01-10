@@ -1,6 +1,7 @@
 {{ 'img/developers.jpeg' | asset_url | img_tag }}
 
 {{ api | sexy_api_script: nonce }}
+{{ 'js/AdvancedApplication.js' | asset_url | javascript_tag: nonce }}
 
 <br>
 <style type="text/css" nonce="{{nonce}}">
@@ -13,16 +14,3 @@
 	Loading Api ...
 </p>
 
-{{ "const api = new AdvancedApplication() ; api.init()" | safe_script: nonce }}
-<script nonce="{{nonce}}" type="text/javascript">
-	((loaderIsSet) => {
-		if (!loaderIsSet) window.sexy = { load: [] }
-		else window.sexy.load = window.sexy.load || []
-		document.addEventListener("DOMContentLoaded", async () => {
-			const loadersLength = window.sexy.load.length
-			for (let i = 0; i < loadersLength; ++i) {
-				await window.sexy.load[i]()
-			}
-		})
-	})(window.sexy)
-</script>

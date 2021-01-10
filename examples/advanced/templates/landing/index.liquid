@@ -22,7 +22,8 @@
 		</section>
 		{{ page | json | console_log: nonce }}
 		{{ '' | sexy_api_script: nonce }}
-		<script type="text/javascript" nonce="{{ nonce }}">
+
+		<script type="text/javascript" nonce="{{nonce}}">
 			(function(SwaggerClient) {
 				var specUrl = '/api/swagger.json' // data urls are OK too 'data:application/json;base64,abc...'
 				SwaggerClient.http.withCredentials = true // this activates CORS, if necessary

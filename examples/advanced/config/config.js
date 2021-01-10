@@ -6,7 +6,7 @@ module.exports = {
 	
 	middlewares: {
 		redis: {
-			enabled:true,
+			// enabled:true,
 		},
 	},
 	ui: true,
@@ -18,9 +18,9 @@ module.exports = {
     login: true,
 
     session: {
-		disableCookies: true,
+		// disableCookies: true,
         redis: {
-            enabled: true,
+            // enabled: true,
         },
     },
 
