@@ -1,7 +1,6 @@
 {{ 'img/developers.jpeg' | asset_url | img_tag }}
 
-{{ api | sexy_api_script: nonce }}
-{{ 'js/AdvancedApplication.js' | asset_url | javascript_tag: nonce }}
+{{ api | sexy_app_script: nonce }}
 
 <br>
 <style type="text/css" nonce="{{nonce}}">
