@@ -34,7 +34,7 @@
         "@babel/core": "^7.12.9",
         "@babel/preset-env": "^7.12.11",
         "app-root-path": "^3.0.0",
-        "asciiart-logo": "KenEucker/asciiart-logo.git#production",
+        "asciiart-logo": "github:KenEucker/asciiart-logo#production",
         "async-redis": "^1.1.7",
         "bluebird": "^3.7.2",
         "body-parser": "^1.19.0",
