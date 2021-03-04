@@ -102,6 +102,7 @@
         "swagger-jsdoc": "^5.0.1",
         "swagger-ui-express": "^4.1.4",
         "try-require": "^1.2.1",
+        "uest": "^1.0.20",
         "unzipper": "^0.10.11",
         "uuid": "^8.3.1",
         "watch": "^1.0.2",

@@ -8,6 +8,9 @@ module.exports = {
 		redis: {
 			// enabled:true,
 		},
+		mongodb: {
+			enabled: true,
+		}
 	},
 	ui: true,
 
