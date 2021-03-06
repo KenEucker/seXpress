@@ -1,6 +1,6 @@
 # seXpress
 
-A configurable framework built around express for multitenant web applications.
+A configurable [Jamstack](https://jamstack.org/) framework built around express for scale-as-you-develop multitenant web applications.
 
 seXpress provides a series of modules that can be turned on or off depending on the configuration set. In addition to this simple architecture, content editing and configuring can be done entirely via the codebase on GitHub. seXpress was built as an evolution of a modular webserver project that I had used on previous websites. I started the seXpress project after feeling like I had a solution that I could replace all previous solutions with for my websites. Enjoy!
 
@@ -15,7 +15,7 @@ It's easy to use, all inclusive, configurable by using JSON files, and it's your
 
 ## Getting started
 
-Using seXpress is even more simple than running express, as is the point.
+Using seXpress is even more simple than running express, as is the point. From the given configuration and source files present in the app's root directory, seXpress will run the required modules and set up your application's specific middlewares.
 
 ```
 const seXpress = require("sexpress")()
