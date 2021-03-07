@@ -14,6 +14,7 @@
         "intermediate": "node examples/intermediate/app",
         "wordpress": "node examples/wordpress/app",
         "advanced": "node examples/advanced/app",
+        "backend": "node examples/backend/app",
         "donts": "node examples/donts/app",
         "clean": "node_modules/.bin/prettier . --write"
     },

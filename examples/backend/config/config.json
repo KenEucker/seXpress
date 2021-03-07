@@ -1,0 +1,7 @@
+{
+    "name": "backend example",
+
+    "rendering": {
+        "overrideViewEngine": ["liquid", "ejs"]
+    }
+}
