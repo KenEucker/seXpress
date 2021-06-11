@@ -16,7 +16,7 @@
         "advanced": "node examples/advanced/app",
         "backend": "node examples/backend/app",
         "donts": "node examples/donts/app",
-        "clean": "node_modules/.bin/prettier . --write"
+        "lint": "node_modules/.bin/prettier . --write"
     },
     "repository": {
         "type": "git",
