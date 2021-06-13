@@ -1,19 +1,19 @@
 module.exports = {
-    name: 'Advanced Application',
-	port: 80,
-	silent: true,
-	host: 'advanced.local',
-	
-	middlewares: {
-		redis: {
-			enabled:true,
-		},
-	
-		wordpress: {
-			enabled: true,
-		},
-	},
-	ui: true,
+    name: 'Wordpress Application',
+    port: 80,
+    silent: true,
+    host: 'wordpress.local',
+
+    middlewares: {
+        redis: {
+            enabled: true,
+        },
+
+        wordpress: {
+            enabled: true,
+        },
+    },
+    ui: true,
 
     rendering: {
         overrideViewEngine: ['liquid', 'ejs'],
@@ -22,11 +22,11 @@ module.exports = {
     login: true,
 
     session: {
-		disableCookies: true,
+        disableCookies: true,
         redis: {
             enabled: true,
         },
-	},
+    },
 
     logging: {
         onlyLogErrors: false,
@@ -40,12 +40,11 @@ module.exports = {
     api: {
         secureApiDocs: true,
         privateApis: ['admin'],
-	},
+    },
 
     authentication: {
         enabled: true,
-        schemes: [
-            {
+        schemes: [{
                 name: 'local',
                 credentials: {
                     username: 'test',
