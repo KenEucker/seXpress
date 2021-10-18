@@ -13,5 +13,8 @@
     "files.insertFinalNewline": true,
     "window.zoomLevel": 0,
     "prettier.semi": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }
