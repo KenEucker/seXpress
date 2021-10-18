@@ -1,6 +1,6 @@
 {
     "name": "sexpress",
-    "version": "0.7.92",
+    "version": "0.7.93",
     "description": "A seXy wrapper around express for multitenant websites",
     "main": "index.js",
     "directories": {
