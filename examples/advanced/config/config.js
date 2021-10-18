@@ -6,7 +6,7 @@ module.exports = {
 
     middlewares: {
         redis: {
-            // enabled:true,
+            enabled:true,
         },
         mongodb: {
             enabled: true,
@@ -64,8 +64,8 @@ module.exports = {
         // strategy: 'greenlock',
         contentSecurityPolicy: {
             directives: {
-                styleSrc: [`https://code.jquery.com/`, `https://cdn.jsdelivr.net/`],
-                scriptSrc: [`https://code.jquery.com/`, `https://cdn.jsdelivr.net/`],
+                // styleSrc: [`https://code.jquery.com/`, `https://cdn.jsdelivr.net/`],
+                // scriptSrc: [`https://code.jquery.com/`, `https://cdn.jsdelivr.net/`],
             },
         },
     },
