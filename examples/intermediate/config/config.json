@@ -23,5 +23,16 @@
             "username": "test"
         },
         "schemes": ["local", "basic"]
-    }
+    },
+
+	"database": {
+		"enabled": true,
+		"provider": "supabase"
+	},
+
+    "middlewares": {
+        "supabase": {
+            "enabled": true
+        }
+	}
 }
