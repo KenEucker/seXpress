@@ -5,9 +5,9 @@ module.exports = {
     host: 'wordpress.local',
 
     middlewares: {
-        redis: {
-            enabled: true,
-        },
+        // redis: {
+        //     enabled: true,
+        // },
 
         wordpress: {
             enabled: true,
@@ -23,9 +23,9 @@ module.exports = {
 
     session: {
         disableCookies: true,
-        redis: {
-            enabled: true,
-        },
+        // redis: {
+        //     enabled: true,
+        // },
     },
 
     logging: {
